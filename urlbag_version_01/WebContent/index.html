@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>URLBag index</title>
+<link type="text/CSS" rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/CSS" rel="stylesheet" href="css/style.css">
+<style>
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;}
+.content {
+    position: fixed;
+    height:100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+</style>
+<script>
+var video = document.getElementById('video'); video.addEventListener('click',function(){ video.play(); },false);
+</script>
+</head>
+<body>
+<video playsinline autoplay muted loop id="myVideo" poster="template/best background.jpg">
+  <source src="template/URLBag_video.mp4" type="video/mp4">
+  <source src="template/URLBag_video.webm" type="video/webm">
+  
+</video>
+
+<div class="content">
+<div class="container">
+  <br />
+  <h1>Hi there, Welcome to URLBag</h1>
+  <h4>Capture URLs online.</h4><br />
+  <form action="Login.html">
+    <input type="submit" value="Login" class="btn btn-default"/>
+    
+</form><br />
+<form action="Signup.html">
+    <input type="submit" value="Signup" class="btn btn-default"/>
+</form>
+<footer> 
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> Kamalesh</a>
+    </div>
+    
+</footer>
